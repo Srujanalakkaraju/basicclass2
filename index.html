@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Your Own T-Shirt!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Design Your Own T-Shirt!</h1><br>
+  <form name="tshirtRegistrationForm" action="">
+    <fieldset>
+      <legend>Personalize Your Info</legend>
+      <div class="form-group">
+        <label for="firstName">First Name*:</label>
+        <input type="text" name="firstName" id="firstName" required placeholder="Enter your first name">
+      </div> <br>
+      <div class="form-group">
+        <label for="lastName">Last Name*:</label>
+        <input type="text" name="lastName" id="lastName" required placeholder="Enter your last name">
+      </div> <br>
+      <div class="form-group">
+        <label for="email">Email*:</label>
+        <input type="email" name="email" id="email" required placeholder="Enter your email address">
+      </div> <br>
+      <div class="form-group">
+        <label for="phone">Phone Number (Optional):</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number (optional)">
+      </div> <br>
+      <div class="form-group">
+        <label for="address">Shipping Address*:</label>
+        <textarea name="address" id="address" rows="4" placeholder="Enter your street address, city, state and Zip code"></textarea>
+      </div>
+    </fieldset> <br>
+    <fieldset>
+      <legend>Craft Your T-Shirt</legend> <br>
+      <div class="form-group">
+        <label for="size">T-Shirt Size*:</label>
+        <select name="size" id="size" required>
+          <option value="">Select Size</option>
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+          <option value="XL">Extra Large</option>
+        </select>
+      </div> <br>
+      <div class="form-group">
+        <label for="gender">Gender (Optional):</label>
+        <select name="gender" id="gender">
+          <option value="">Select Gender (Optional)</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="non-binary">Non-Binary</option>
+          <option value="prefer-not-to-say">Prefer Not to Say</option>
+        </select>
+      </div> <br>
+      <div class="form-group">
+        <label for="customText">Add Your Personal Touch (Optional):</label>
+        <input type="text" name="customText" id="customText" placeholder="Enter text to print on your T-shirt">
+      </div> <br>
+      <div class="form-group">
+        <label for="instructions">Special Instructions (Optional):</label>
+        <textarea name="instructions" id="instructions" rows="4" placeholder="Any specific details about your T-shirt design"></textarea>
+      </div>
+    </fieldset> <br>
+    <div class="form-group">
+      <button type="submit">Let's Make It Happen!</button>
+    </div>
+  </form>
+</body>
+</html>
